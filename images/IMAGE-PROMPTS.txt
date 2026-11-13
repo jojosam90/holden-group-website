@@ -1,0 +1,115 @@
+IMAGE PROMPTS 圖片生成提示
+Save each result in holden-website/images/ with the file name shown. Add this style line to the end of EVERY prompt so all images match:
+
+STYLE: premium editorial photography, deep navy and warm gold colour palette, soft natural light, shallow depth of field, clean uncluttered composition, photorealistic, no text, no logos, no watermarks
+
+HOME & COMPANY
+hero.jpg (2560x1080, 21:9)
+  Wide panoramic still life of luxury Cantonese dried seafood on a dark navy stone table: dried sea cucumbers, whole dried abalone and golden fish maw in fine porcelain dishes, a bottle of red wine and a crystal glass to one side, subject centred with generous empty space left and right
+
+company.jpg (1600x1000, 16:10)
+  Modern bright Hong Kong trading company office with a small professional team reviewing documents at a long table, floor-to-ceiling window with blurred city view, calm and trustworthy mood
+
+PRODUCTS
+sea-cucumber-1.jpg (1200x1200)
+  Premium dried sea cucumbers neatly arranged on a dark slate board, top-down three-quarter angle, studio product shot
+sea-cucumber-2.jpg (1200x1200)
+  Macro close-up of the textured surface of a dried sea cucumber, dramatic side light showing ridges and spines
+sea-cucumber-3.jpg (1200x1200)
+  Braised sea cucumber with scallion (Cantonese 蔥燒海參) in glossy brown sauce, served on an elegant white plate at a fine-dining table
+
+abalone-1.jpg (1200x1200)
+  Whole dried abalones arranged in a row on dark wood, warm gold rim light, studio product shot
+abalone-2.jpg (1200x1200)
+  Macro close-up of a dried abalone showing its amber, translucent texture
+abalone-3.jpg (1200x1200)
+  Braised abalone in rich oyster sauce (蠔皇鮑魚) on a fine porcelain plate with a sprig of greens, banquet setting
+
+fish-maw-1.jpg (1200x1200)
+  Large golden dried fish maw pieces on a dark navy linen cloth, studio product shot
+fish-maw-2.jpg (1200x1200)
+  Macro close-up of dried fish maw showing its layered golden texture, backlit to glow
+fish-maw-3.jpg (1200x1200)
+  Clear double-boiled chicken soup with fish maw (花膠燉雞湯) in a white porcelain tureen, steam rising
+
+wine-1.jpg (1200x1200)
+  Two bottles of fine red wine, one French Bordeaux style and one Australian Shiraz style, plain labels with no readable text, on a dark wooden bar
+wine-2.jpg (1200x1200)
+  Red wine being poured into a crystal glass, close-up, deep ruby colour, dark background
+wine-3.jpg (1200x1200)
+  Glass of red wine beside a plated Cantonese banquet dish at an upscale restaurant table, candlelight
+
+wine-france.jpg (1600x1000, 16:10)   product-overview tile
+  Bottle of French Bordeaux-style red wine with a plain label and no readable text, crystal glass beside it, vineyard-cellar mood, dark wood
+wine-australia.jpg (1600x1000, 16:10)   product-overview tile
+  Bottle of Australian Shiraz-style red wine with a plain label and no readable text, glass of deep purple wine, warm sunlit tones on dark stone
+
+wagyu.jpg (1600x1000, 16:10)   also used for the 即將推出 tile
+  Raw A5 wagyu steak with intense marbling on a dark slate board, coarse salt beside it
+caviar.jpg (1600x1000, 16:10)
+  Open tin of black caviar on crushed ice with a mother-of-pearl spoon, dark background
+sea-urchin.jpg (1600x1000, 16:10)
+  Fresh golden sea urchin (uni) tongues neatly arranged in a wooden tray, Japanese style
+
+BUSINESS & SUPPLY CHAIN
+division-foodservice.jpg (1600x900, 16:9)
+  Chef in white uniform plating a premium seafood dish in a professional hotel kitchen, stainless steel, warm light
+division-private.jpg (1600x900, 16:9)
+  Luxury navy and gold gift box opened to show dried abalone, sea cucumber and fish maw, ribbon beside it, festive but elegant
+
+step-1.jpg (1200x900, 4:3)   Sourcing
+  Buyer inspecting fresh seafood with a supplier at a coastal fishing port at sunrise
+step-2.jpg (1200x900, 4:3)   Quality inspection
+  Quality inspector in white coat and gloves checking dried seafood on a stainless steel table with a scale and clipboard
+step-3.jpg (1200x900, 4:3)   Cold storage
+  Clean modern cold-storage warehouse with neatly stacked insulated boxes, cool blue light, light frost
+step-4.jpg (1200x900, 4:3)   Transport
+  Air cargo containers being loaded onto a plane at Hong Kong International Airport, dusk
+step-5.jpg (1200x900, 4:3)   Delivery
+  Delivery worker handing an insulated box to a restaurant staff member at a back door, friendly
+
+origin-seafood.jpg (600x600, 1:1)   海味產地
+  Close-up of a fisherman's hands lifting a net full of fresh sea cucumbers and abalone from clear blue sea water, sunlight sparkling, simple bold composition that reads clearly at small size
+origin-france.jpg (600x600, 1:1)   法國酒莊
+  Rows of oak wine barrels in a candlelit French chateau cellar with stone arches, simple bold composition that reads clearly at small size
+origin-australia.jpg (600x600, 1:1)   澳洲酒莊
+  Close-up of ripe dark Shiraz grape bunches hanging on the vine, warm Australian sunset glow behind, simple bold composition that reads clearly at small size
+hub-hongkong.jpg (600x600, 1:1)   香港樞紐
+  Hong Kong container port with cranes and stacked containers, Victoria Harbour skyline behind at dusk, simple bold composition that reads clearly at small size
+client-restaurant.jpg (600x600, 1:1)   中、日、西餐廳
+  Close-up of an elegant fine-dining table setting with a plated premium dish, wine glass and soft candlelight, simple bold composition that reads clearly at small size
+client-hotel.jpg (600x600, 1:1)   五星級酒店
+  Grand five-star hotel banquet hall with round dinner tables and crystal chandeliers, simple bold composition that reads clearly at small size
+client-gba.jpg (600x600, 1:1)   大灣區及亞洲
+  Aerial view of the Hong Kong-Zhuhai-Macau Bridge curving across the sea at sunset, simple bold composition that reads clearly at small size
+
+CLIENT TYPES
+client-chinese.jpg (1200x900, 4:3)   中餐廳
+  Elegant Cantonese fine-dining restaurant with round tables, white tablecloths, lazy susan and porcelain tableware, warm lighting, no people
+client-japanese.jpg (1200x900, 4:3)   日本餐廳
+  Refined Japanese omakase counter of light hinoki wood, chef's knives and a few sushi pieces on a ceramic plate, calm minimal interior
+client-western.jpg (1200x900, 4:3)   西餐廳
+  Upscale Western fine-dining restaurant with candlelit tables, wine glasses and a plated steak, warm moody light
+client-5star-hotel.jpg (1200x900, 4:3)   五星級酒店
+  Grand five-star hotel lobby with marble floor, high ceiling, crystal chandelier and a bellhop trolley, elegant and spacious, no people
+client-private.jpg (1200x900, 4:3)   高端個人客戶
+  Luxury private home dining table set for a family dinner with dried abalone and sea cucumber dishes and red wine, Hong Kong apartment with harbour view
+client-gift.jpg (1200x900, 4:3)   企業禮品
+  Stack of premium navy and gold corporate gift boxes with satin ribbon, one open showing dried seafood and a bottle of red wine
+
+delivery.jpg (1600x1200, 4:3)
+  White refrigerated delivery van parked on a clean Hong Kong street, rear doors open showing insulated boxes
+
+commitment.jpg (2400x900)
+  Very dark, moody wide background of a cold-chain warehouse aisle, deep navy tones, mostly shadow so white text can sit on top
+
+NEWS
+news-1.jpg (1200x800, 3:2)   海天集團於香港註冊成立 (2024)
+  Modern Hong Kong business office at the start of a new company, two partners shaking hands beside a window overlooking Victoria Harbour, fresh and optimistic morning light
+news-2.jpg (1200x800, 3:2)   第二營運年度銷售額達2,980萬港元
+  Busy, well-organised cold-chain warehouse with staff in uniforms packing premium dried seafood and wine into insulated boxes, many stacked orders ready to ship, sense of strong growth
+news-3.jpg (1200x800, 3:2)   計劃引入和牛、魚子醬及海膽
+  Elegant flat lay on dark marble of a marbled A5 wagyu steak, an open tin of black caviar with a mother-of-pearl spoon, and a wooden tray of golden sea urchin, top-down view
+
+DO NOT GENERATE
+  qr-wechat.svg                    Replace with your real WeChat QR code
