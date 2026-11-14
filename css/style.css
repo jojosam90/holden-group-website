@@ -859,3 +859,36 @@ html[data-lang="en"] .soon-body p{font-size:17.5px}
   #products .tile em{bottom:16px;right:24px}
 }
 @media(min-width:1001px){#products.tiles-sec > .wrap{width:100%}}
+
+/* ===== mobile alignment fixes (phones 320–640px) ===== */
+@media(max-width:640px){
+  /* header: controls keep their size, icons never shrink */
+  .nav-right{flex:none;gap:8px}
+  .cart-btn svg,.menu-btn,.lang-toggle{flex:none}
+  .brand{flex:1 1 auto;overflow:hidden}
+  /* product tiles: two equal columns that never push past the screen edge */
+  .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tile{min-width:0}
+  .tile b{overflow-wrap:break-word;hyphens:auto}
+  .tile .tile-img .ph-label code{word-break:break-all}
+  /* safety net against any stray horizontal scroll (clip keeps the sticky header working) */
+  html,body{overflow-x:clip}
+  /* enquiry drawer: send buttons may wrap to two lines instead of running off-screen */
+  .drawer-foot .btn{white-space:normal;line-height:1.25;gap:6px;padding:10px 8px;text-align:center}
+}
+@media(max-width:414px){
+  /* brand name 海天集團 fits beside the controls on 375–414px phones */
+  .nav{gap:10px}
+  .brand{gap:8px}
+  .brand-text b{font-size:17px;letter-spacing:.04em}
+  .nav-right{gap:6px}
+  .cart-btn{padding:0 10px}
+  .lang-toggle button{padding:6px 7px;min-width:36px}
+}
+@media(max-width:374px){
+  /* small phones (iPhone SE 1st gen, older Android): the bottom bar already has the enquiry button */
+  .site-header .cart-btn{display:none}
+  .tile{padding:20px 14px}
+  .tile b{font-size:18px}
+  .tile > span{font-size:15px}
+}
