@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=44">
+<link rel="stylesheet" href="css/style.css?v=49">
 </head>
 <body>
 
@@ -61,7 +61,7 @@
     <span class="u-r">
       <a href="#news"><span class="zh">公司動態</span><span class="en">News</span></a>
       <a href="#process"><span class="zh">採購查詢</span><span class="en">Procurement</span></a>
-      <a href="https://wa.me/85251951606" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="#contact"><span class="zh">聯絡我們</span><span class="en">Contact</span></a>
     </span>
   </div>
 </div>
@@ -105,8 +105,8 @@
         <button type="button" data-set-lang="zh" aria-pressed="true">繁</button>
         <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
       </div>
-      <button type="button" class="cart-btn" data-open-cart aria-label="Enquiry list">
-        <svg><use href="#i-bag"/></svg><span class="lbl"><span class="zh">查詢清單</span><span class="en">Enquiry</span></span><span class="cart-count">0</span>
+      <button type="button" class="cart-btn" data-open-cart aria-label="Enquiry">
+        <svg><use href="#i-mail"/></svg><span class="lbl"><span class="zh">查詢</span><span class="en">Enquiry</span></span><span class="cart-count">0</span>
       </button>
       <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
     </div>
@@ -126,7 +126,7 @@
     </blockquote>
     <div class="hero-cta reveal">
       <a class="btn btn-orange" href="#products"><span class="zh">探索產品中心</span><span class="en">Explore Products</span><svg><use href="#i-arrow"/></svg></a>
-      <button type="button" class="btn btn-outline" data-open-cart><svg><use href="#i-bag"/></svg><span class="zh">採購查詢</span><span class="en">Procurement Enquiry</span></button>
+      <button type="button" class="btn btn-outline" data-open-cart><svg><use href="#i-mail"/></svg><span class="zh">採購查詢</span><span class="en">Procurement Enquiry</span></button>
     </div>
   </div>
   <div class="wrap">
@@ -163,7 +163,7 @@
       <div class="t">
         <span class="kicker"><span class="zh">產品詳情</span><span class="en">Product Details</span></span>
         <h2><span class="zh">認識我們的高端食材</span><span class="en">Get to know our ingredients</span></h2>
-        <p><span class="zh">了解每款產品的特點、規格及適用菜式，選擇數量即可加入查詢清單。</span><span class="en">See each product's character, grading and best uses, then add the quantity you need to your enquiry list.</span></p>
+        <p><span class="zh">了解每款產品的特點、規格及適用菜式。</span><span class="en">See each product's character, grading and best uses.</span></p>
       </div>
     </div>
     <div class="tabs" role="group" aria-label="Categories" id="tabs">
@@ -255,12 +255,12 @@
       </div>
     </div>
     <div class="adv">
-      <div class="adv-item reveal"><span class="ic"><svg><use href="#i-link"/></svg></span><h3><span class="zh">P2P 源頭直供</span><span class="en">P2P direct supply</span></h3><p><span class="zh">減少中間環節，在品質、價格與交付時效上更具優勢。</span><span class="en">Fewer middlemen means better quality, pricing and delivery times.</span></p></div>
+      <div class="adv-item reveal"><span class="ic"><svg><use href="#i-link"/></svg></span><h3><span class="zh">P2P 源頭直供</span><span class="en">P2P direct supply</span></h3><p><span class="zh">減少中間環節，在品質與交付時效上更具優勢。</span><span class="en">Fewer middlemen means better quality and faster delivery.</span></p></div>
       <div class="adv-item reveal"><span class="ic"><svg><use href="#i-shield"/></svg></span><h3><span class="zh">嚴格品質管控</span><span class="en">Strict quality control</span></h3><p><span class="zh">供應商篩選、逐批檢驗，確保符合高端客戶標準。</span><span class="en">Supplier screening and batch checks to high-end standards.</span></p></div>
       <div class="adv-item reveal"><span class="ic"><svg><use href="#i-snow"/></svg></span><h3><span class="zh">全程冷鏈物流</span><span class="en">End-to-end cold chain</span></h3><p><span class="zh">由倉儲到送貨全程溫控，保障新鮮與安全。</span><span class="en">Temperature control from storage to delivery for freshness and safety.</span></p></div>
       <div class="adv-item reveal"><span class="ic"><svg><use href="#i-search"/></svg></span><h3><span class="zh">品質可追溯</span><span class="en">Full traceability</span></h3><p><span class="zh">可提供產地、規格及批次資料，供應鏈透明。</span><span class="en">Origin, grade and batch details available on request.</span></p></div>
       <div class="adv-item reveal"><span class="ic"><svg><use href="#i-repeat"/></svg></span><h3><span class="zh">穩定定期供應</span><span class="en">Reliable regular supply</span></h3><p><span class="zh">為餐廳及酒店安排定期補貨，出品更穩定。</span><span class="en">Scheduled restocking keeps restaurant and hotel menus consistent.</span></p></div>
-      <div class="adv-item reveal"><span class="ic"><svg><use href="#i-headset"/></svg></span><h3><span class="zh">專人跟進服務</span><span class="en">Dedicated account contact</span></h3><p><span class="zh">由專人跟進報價、訂單及配送，溝通更高效。</span><span class="en">One person handles your quotes, orders and deliveries.</span></p></div>
+      <div class="adv-item reveal"><span class="ic"><svg><use href="#i-headset"/></svg></span><h3><span class="zh">專人跟進服務</span><span class="en">Dedicated account contact</span></h3><p><span class="zh">由專人跟進查詢、訂單及配送，溝通更高效。</span><span class="en">One person handles your enquiries, orders and deliveries.</span></p></div>
     </div>
   </div>
 </section>
@@ -280,7 +280,7 @@
         <div class="ditem"><span class="ic"><svg><use href="#i-store"/></svg></span><div><h3><span class="zh">預約自取</span><span class="en">Pickup by appointment</span></h3><p><span class="zh">可預約到葵涌辦事處自取。</span><span class="en">Collect from our Kwai Chung office.</span></p></div></div>
         <div class="ditem"><span class="ic"><svg><use href="#i-globe"/></svg></span><div><h3><span class="zh">大灣區及跨境</span><span class="en">GBA &amp; cross-border</span></h3><p><span class="zh">大灣區及亞洲其他地區配送，歡迎查詢。</span><span class="en">Delivery to the Greater Bay Area and wider Asia on request.</span></p></div></div>
       </div>
-      <p class="note"><svg><use href="#i-info"/></svg><span><span class="zh">配送時間、範圍及費用將於報價時確認。</span><span class="en">Delivery times, areas and charges are confirmed with your quote.</span></span></p>
+      <p class="note"><svg><use href="#i-info"/></svg><span><span class="zh">配送時間及範圍將於確認訂單時安排。</span><span class="en">Delivery times and areas are arranged when your order is confirmed.</span></span></p>
     </div>
   </div>
 </section>
@@ -295,15 +295,15 @@
       </div>
     </div>
     <div class="flow reveal">
-      <div class="fstep"><div class="num">1</div><h3><span class="zh">選擇產品</span><span class="en">Choose products</span></h3><p><span class="zh">在產品中心加入查詢清單</span><span class="en">Add items to your enquiry list</span></p></div>
-      <div class="fstep"><div class="num">2</div><h3><span class="zh">提交查詢</span><span class="en">Send enquiry</span></h3><p><span class="zh">經 WhatsApp 或電郵一鍵發送</span><span class="en">One tap via WhatsApp or email</span></p></div>
-      <div class="fstep"><div class="num">3</div><h3><span class="zh">確認報價</span><span class="en">Confirm quote</span></h3><p><span class="zh">專人回覆規格、產地及價格</span><span class="en">We reply with grades, origins and pricing</span></p></div>
+      <div class="fstep"><div class="num">1</div><h3><span class="zh">選擇產品</span><span class="en">Choose products</span></h3><p><span class="zh">瀏覽產品中心，選擇所需產品</span><span class="en">Browse our product centre</span></p></div>
+      <div class="fstep"><div class="num">2</div><h3><span class="zh">提交查詢</span><span class="en">Send enquiry</span></h3><p><span class="zh">經電郵或電話聯絡我們</span><span class="en">By email or phone</span></p></div>
+      <div class="fstep"><div class="num">3</div><h3><span class="zh">確認詳情</span><span class="en">Confirm details</span></h3><p><span class="zh">專人回覆規格及產地</span><span class="en">We reply with grades and origins</span></p></div>
       <div class="fstep"><div class="num">4</div><h3><span class="zh">冷鏈配送</span><span class="en">Cold-chain delivery</span></h3><p><span class="zh">按約定時間送貨或自取</span><span class="en">Delivered or collected as agreed</span></p></div>
       <div class="fstep"><div class="num">5</div><h3><span class="zh">售後跟進</span><span class="en">After-sales care</span></h3><p><span class="zh">持續跟進，安排定期補貨</span><span class="en">Ongoing support and restocking</span></p></div>
     </div>
     <div class="flow-cta reveal">
-      <button type="button" class="btn btn-orange" data-open-cart><svg><use href="#i-bag"/></svg><span class="zh">打開查詢清單</span><span class="en">Open Enquiry List</span></button>
-      <a class="btn btn-wa" href="https://wa.me/85251951606" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span class="zh">直接 WhatsApp</span><span class="en">WhatsApp Directly</span></a>
+      <button type="button" class="btn btn-orange" data-open-cart><svg><use href="#i-mail"/></svg><span class="zh">提交查詢</span><span class="en">Make an Enquiry</span></button>
+      <a class="btn btn-outline" href="#contact"><svg><use href="#i-phone"/></svg><span class="zh">聯絡資料</span><span class="en">Contact Details</span></a>
     </div>
   </div>
 </section>
@@ -359,12 +359,6 @@
         </div>
       </div>
     </div>
-    <div class="stats reveal">
-      <div class="stat"><div class="n">2024</div><div class="l"><span class="zh">於香港成立</span><span class="en">Founded in Hong Kong</span></div></div>
-      <div class="stat"><div class="n"><span class="zh">2,980<small>萬港元</small></span><span class="en"><small style="margin:0 2px 0 0">HK$</small>29.8<small>M</small></span></div><div class="l"><span class="zh">第二營運年度銷售額</span><span class="en">Year 2 revenue</span></div></div>
-      <div class="stat"><div class="n">~10<small>×</small></div><div class="l"><span class="zh">兩年銷售額增長</span><span class="en">Revenue growth in two years</span></div></div>
-      <div class="stat"><div class="n"><span class="zh">385<small>萬港元</small></span><span class="en"><small style="margin:0 2px 0 0">HK$</small>3.85<small>M</small></span></div><div class="l"><span class="zh">第二營運年度利潤</span><span class="en">Year 2 profit</span></div></div>
-    </div>
 
     <h3 class="sub-title reveal culture-title" id="culture"><span class="zh">企業文化</span><span class="en">Corporate Culture</span></h3>
     <div class="culture">
@@ -392,10 +386,6 @@
         <div class="nb"><time>2024.06</time><h3><span class="zh">海天集團於香港註冊成立</span><span class="en">Holden Group incorporated in Hong Kong</span></h3><p><span class="zh">公司以P2P點對點模式起步，專注高端食材供應鏈。</span><span class="en">The company launched with a P2P model focused on premium food supply.</span></p><a href="#about" class="more"><span class="zh">更多</span><span class="en">More</span> →</a></div>
       </article>
       <article class="news-card reveal">
-        <div class="ph" data-ph><div class="ph-label"><svg><use href="#i-img"/></svg><b><span class="zh">新聞圖片位置</span><span class="en">News photo</span></b><code>images/news-2.jpg</code></div><img src="images/news-2.jpg" alt="" onerror="this.remove()"></div>
-        <div class="nb"><time>2026.06</time><h3><span class="zh">第二營運年度銷售額達2,980萬港元</span><span class="en">Year 2 revenue reaches HK$29.8 million</span></h3><p><span class="zh">兩年內銷售額增長近十倍，並由虧轉盈，實現利潤385萬港元。</span><span class="en">Revenue grew almost tenfold in two years and the business turned a HK$3.85M profit.</span></p><a href="#about" class="more"><span class="zh">更多</span><span class="en">More</span> →</a></div>
-      </article>
-      <article class="news-card reveal">
         <div class="ph" data-ph><div class="ph-label"><svg><use href="#i-img"/></svg><b><span class="zh">新聞圖片位置</span><span class="en">News photo</span></b><code>images/news-3.jpg</code></div><img src="images/news-3.jpg" alt="" onerror="this.remove()"></div>
         <div class="nb"><time><span class="zh">即將推出</span><span class="en">Coming soon</span></time><h3><span class="zh">計劃引入和牛、魚子醬及海膽</span><span class="en">Wagyu, caviar and sea urchin on the way</span></h3><p><span class="zh">產品組合進一步豐富，覆蓋更多高端餐飲及會員需求。</span><span class="en">The range is expanding to cover more fine-dining and member needs.</span></p><a href="#soonWrap" class="more"><span class="zh">更多</span><span class="en">More</span> →</a></div>
       </article>
@@ -406,29 +396,22 @@
 <!-- ================= CONTACT ================= -->
 <section class="bg-deep" id="contact">
   <div class="wrap">
-    <div class="cta-band reveal">
-      <div><h2><span class="zh">需要穩定的高端食材供應？</span><span class="en">Looking for a reliable premium supplier?</span></h2><p><span class="zh">告訴我們您的需要，我們會盡快提供報價。</span><span class="en">Tell us what you need and we will send a quote as soon as possible.</span></p></div>
-      <div class="btns">
-        <button type="button" class="btn btn-white" data-open-cart><svg><use href="#i-bag"/></svg><span class="zh">提交查詢</span><span class="en">Send an Enquiry</span></button>
-        <a class="btn btn-ghost" href="tel:+85251951606"><svg><use href="#i-phone"/></svg>5195 1606</a>
-      </div>
-    </div>
     <div class="contact">
       <div class="reveal">
         <span class="kicker"><span class="zh">聯絡我們</span><span class="en">Contact Us</span></span>
-        <h2 style="font-weight:800;font-size:clamp(30px,3.6vw,42px);line-height:1.25;margin:12px 0 26px"><span class="zh">歡迎查詢產品及報價</span><span class="en">Get in touch</span></h2>
+        <h2 style="font-weight:800;font-size:clamp(30px,3.6vw,42px);line-height:1.25;margin:12px 0 26px"><span class="zh">聯絡資料</span><span class="en">Contact details</span></h2>
         <ul class="clist">
-          <li><span class="ic"><svg><use href="#i-wa"/></svg></span><div><div class="k">WhatsApp</div><div class="v"><a href="https://wa.me/85251951606" target="_blank" rel="noopener">+852 5195 1606</a></div></div></li>
+          <li><span class="ic"><svg><use href="#i-ware"/></svg></span><div><div class="k"><span class="zh">公司名稱</span><span class="en">Company</span></div><div class="v">海天集團國際有限公司<br>HOLDEN GROUP (INTERNATIONAL) LIMITED</div></div></li>
           <li><span class="ic"><svg><use href="#i-phone"/></svg></span><div><div class="k"><span class="zh">電話</span><span class="en">Phone</span></div><div class="v"><a href="tel:+85251951606">+852 5195 1606</a></div></div></li>
           <li><span class="ic"><svg><use href="#i-mail"/></svg></span><div><div class="k"><span class="zh">電郵</span><span class="en">Email</span></div><div class="v"><a href="mailto:holdengroupintl@gmail.com">holdengroupintl@gmail.com</a></div></div></li>
-          <li><span class="ic"><svg><use href="#i-pin"/></svg></span><div><div class="k"><span class="zh">地址</span><span class="en">Address</span></div><div class="v"><span class="zh">香港新界葵涌大連排道42-46號葵盛工業大廈第二期10樓H9室</span><span class="en">Flat H9, 10/F., Kwai Shing Industrial Building Phase II, 42-46 Tai Lin Pai Road, Kwai Chung, N.T., Hong Kong</span></div></div></li>
+          <li><span class="ic"><svg><use href="#i-pin"/></svg></span><div><div class="k"><span class="zh">地址</span><span class="en">Address</span></div><div class="v"><span class="zh"><span class="nw">香港新界葵涌</span><span class="nw">貨櫃碼頭路88號</span><span class="nw">永得利廣場</span><br>1座18樓7室52號</span><span class="en">No. 52 Unit 7, 18/F Tower One of Ever Gain Plaza, No. 88 Container Port Rd, Kwai Chung, New Territories, HK</span></div></div></li>
         </ul>
       </div>
       <div class="map reveal">
         <iframe class="gmap" title="Holden Group office map"
-          src="https://www.google.com/maps?q=Kwai+Shing+Industrial+Building+Phase+II,+42-46+Tai+Lin+Pai+Road,+Kwai+Chung,+Hong+Kong&amp;hl=zh-TW&amp;z=17&amp;output=embed"
+          src="https://www.google.com/maps?q=Ever+Gain+Plaza+Tower+1,+88+Container+Port+Road,+Kwai+Chung,+Hong+Kong&amp;hl=zh-TW&amp;z=17&amp;output=embed"
           loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-        <a class="map-open" href="https://www.google.com/maps/search/?api=1&amp;query=Kwai+Shing+Industrial+Building+Phase+II+42-46+Tai+Lin+Pai+Road+Kwai+Chung" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><span class="zh">在 Google 地圖開啟</span><span class="en">Open in Google Maps</span></a>
+        <a class="map-open" href="https://www.google.com/maps/search/?api=1&amp;query=Ever+Gain+Plaza+Tower+1+88+Container+Port+Road+Kwai+Chung" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><span class="zh">在 Google 地圖開啟</span><span class="en">Open in Google Maps</span></a>
       </div>
     </div>
   </div>
@@ -439,18 +422,12 @@
   <div class="wrap fgrid">
     <div class="fcol fbrand">
       <div class="brand"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#fff" opacity=".1"/><circle cx="20" cy="13.5" r="4.2" fill="#c9a45c"/><path d="M6 23c3.5-2.6 6.5-2.6 10 0s6.5 2.6 10 0 6.5-2.6 8 0" fill="none" stroke="#9cc3ea" stroke-width="1.8" stroke-linecap="round"/></svg><span class="brand-text"><b style="color:#fff">海天集團國際有限公司</b><small>Holden Group (International) Limited</small></span></div>
-      <p><span class="zh">香港新界葵涌大連排道42-46號葵盛工業大廈第二期10樓H9室</span><span class="en">Flat H9, 10/F., Kwai Shing Industrial Building Phase II, 42-46 Tai Lin Pai Road, Kwai Chung, N.T., Hong Kong</span></p>
+      <p><span class="zh"><span class="nw">香港新界葵涌</span><span class="nw">貨櫃碼頭路88號</span><span class="nw">永得利廣場</span><br>1座18樓7室52號</span><span class="en">No. 52 Unit 7, 18/F Tower One of Ever Gain Plaza, No. 88 Container Port Rd, Kwai Chung, New Territories, HK</span></p>
       <p><a href="tel:+85251951606">+852 5195 1606</a><br><a href="mailto:holdengroupintl@gmail.com">holdengroupintl@gmail.com</a></p>
     </div>
     <div class="fcol"><h4><span class="zh">產品中心</span><span class="en">Products</span></h4><a href="#p-sea-cucumber"><span class="zh">海參</span><span class="en">Sea Cucumber</span></a><a href="#p-abalone"><span class="zh">鮑魚</span><span class="en">Abalone</span></a><a href="#p-fish-maw"><span class="zh">花膠</span><span class="en">Fish Maw</span></a><a href="#p-wine"><span class="zh">精選紅酒</span><span class="en">Fine Wines</span></a><a href="#soonWrap"><span class="zh">即將推出</span><span class="en">Coming Soon</span></a></div>
     <div class="fcol"><h4><span class="zh">供應鏈服務</span><span class="en">Supply Chain</span></h4><a href="#supply-chain"><span class="zh">供應鏈體系</span><span class="en">Our Supply Chain</span></a><a href="#advantages"><span class="zh">服務優勢</span><span class="en">Why Us</span></a><a href="#delivery"><span class="zh">配送服務</span><span class="en">Delivery</span></a><a href="#process"><span class="zh">訂購流程</span><span class="en">How to Order</span></a></div>
     <div class="fcol"><h4><span class="zh">集團簡介</span><span class="en">About</span></h4><a href="#about"><span class="zh">公司簡介</span><span class="en">Company Profile</span></a><a href="#news"><span class="zh">公司動態</span><span class="en">News</span></a><a href="#contact"><span class="zh">聯絡我們</span><span class="en">Contact</span></a></div>
-    <div class="fcol fqr"><h4><span class="zh">掃碼聯絡</span><span class="en">Scan to chat</span></h4>
-      <div class="qr-pair">
-        <figure class="qr-item"><img src="images/qr-whatsapp.svg?v=2" alt="WhatsApp QR code" width="120" height="120"><figcaption>WhatsApp</figcaption></figure>
-        <figure class="qr-item"><img src="images/qr-wechat.svg" alt="WeChat QR code" width="120" height="120"><figcaption><span class="zh">微信</span><span class="en">WeChat</span></figcaption></figure>
-      </div>
-    </div>
   </div>
   <div class="wrap fbottom">
     <span>© <span id="yr">2026</span> <span class="zh">海天集團國際有限公司　版權所有</span><span class="en">Holden Group (International) Limited. All rights reserved.</span></span>
@@ -459,21 +436,20 @@
 </footer>
 
 
-<a class="fab" href="https://wa.me/85251951606" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a>
 <nav class="mbar" aria-label="Quick contact">
   <a href="tel:+85251951606"><svg><use href="#i-phone"/></svg><span class="zh">致電</span><span class="en">Call</span></a>
-  <a class="wa" href="https://wa.me/85251951606" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
-  <button type="button" data-open-cart><svg><use href="#i-bag"/></svg><span class="zh">查詢清單</span><span class="en">Enquiry</span><span class="cart-count">0</span></button>
+  <a href="mailto:holdengroupintl@gmail.com"><svg><use href="#i-mail"/></svg><span class="zh">電郵</span><span class="en">Email</span></a>
+  <button type="button" data-open-cart><svg><use href="#i-mail"/></svg><span class="zh">查詢</span><span class="en">Enquiry</span><span class="cart-count">0</span></button>
 </nav>
 
 <div class="overlay" id="overlay"></div>
 <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true">
   <div class="drawer-head">
-    <h2 id="drawerTitle"><span class="zh">查詢清單</span><span class="en">Enquiry List</span></h2>
+    <h2 id="drawerTitle"><span class="zh">查詢</span><span class="en">Enquiry</span></h2>
     <button type="button" class="x" id="closeCart" aria-label="Close">×</button>
   </div>
   <div class="drawer-body">
-    <div id="emptyState" class="empty"><svg><use href="#i-bag"/></svg><p><span class="zh">清單暫時未有產品。<br>您可先加入產品，或直接填寫查詢。</span><span class="en">Your list is empty.<br>Add products first, or send a general enquiry.</span></p></div>
+    <div id="emptyState" class="empty"><svg><use href="#i-mail"/></svg><p><span class="zh">清單暫時未有產品。<br>您可先加入產品，或直接填寫查詢。</span><span class="en">Your list is empty.<br>Add products first, or send a general enquiry.</span></p></div>
     <ul class="items" id="items"></ul>
     <form class="form" id="enqForm" novalidate>
       <h3><span class="zh">聯絡資料</span><span class="en">Your details</span></h3>
@@ -491,13 +467,12 @@
     </form>
   </div>
   <div class="drawer-foot">
-    <button type="button" class="btn btn-wa" id="sendWa"><svg><use href="#i-wa"/></svg><span class="zh">WhatsApp 發送</span><span class="en">Send by WhatsApp</span></button>
     <button type="button" class="btn btn-dark" id="sendMail"><svg><use href="#i-mail"/></svg><span class="zh">電郵發送</span><span class="en">Send by Email</span></button>
-    <p class="hint"><span class="zh">會開啟 WhatsApp 或電郵程式，並自動填入您的查詢內容。</span><span class="en">This opens WhatsApp or your email app with your enquiry filled in.</span></p>
+    <p class="hint"><span class="zh">會開啟電郵程式，並自動填入您的查詢內容。</span><span class="en">This opens your email app with your enquiry filled in.</span></p>
   </div>
 </aside>
 <div class="toast" id="toast" role="status" aria-live="polite"><span id="toastMsg"></span><button type="button" data-open-cart><span class="zh">查看</span><span class="en">View</span></button></div>
 
-<script src="js/main.js?v=9"></script>
+<script src="js/main.js?v=11"></script>
 </body>
 </html>

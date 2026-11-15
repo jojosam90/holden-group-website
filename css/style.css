@@ -860,6 +860,15 @@ html[data-lang="en"] .soon-body p{font-size:17.5px}
 }
 @media(min-width:1001px){#products.tiles-sec > .wrap{width:100%}}
 
+/* contact details only: no WhatsApp, single email send button, two news cards */
+.drawer-foot .btn{grid-column:1/-1}
+/* no add-to-enquiry on products: hide the item counter and the "list is empty" note */
+.cart-count,#emptyState{display:none!important}
+.f-uses{margin-bottom:0}
+/* footer without the QR column: brand + three link columns */
+@media(min-width:1181px){.fgrid{grid-template-columns:1.6fr 1fr 1fr 1fr}}
+@media(min-width:1001px){.news{grid-template-columns:repeat(2,1fr)}}
+
 /* ===== mobile alignment fixes (phones 320–640px) ===== */
 @media(max-width:640px){
   /* header: controls keep their size, icons never shrink */
@@ -892,3 +901,6 @@ html[data-lang="en"] .soon-body p{font-size:17.5px}
   .tile b{font-size:18px}
   .tile > span{font-size:15px}
 }
+
+/* address: wrap only between place names, never inside one */
+.nw{white-space:nowrap}

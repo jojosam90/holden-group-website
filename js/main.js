@@ -1,7 +1,7 @@
 /* ==================================================================
    PRODUCT DATA: edit text here. Photos go in images/ (see README).
    ================================================================== */
-var CONTACT = { whatsapp: "85251951606", email: "holdengroupintl@gmail.com" };
+var CONTACT = { email: "holdengroupintl@gmail.com" };
 
 /* Featured products: each has a large photo + 2 small photos */
 var FEATURES = [
@@ -17,8 +17,8 @@ var FEATURES = [
     items:[ {pid:"sea-cucumber"} ] },
   { id:"abalone", cat:"seafood",
     tag:{zh:"海味珍品",en:"Premium Seafood"}, name:{zh:"鮑魚",en:"Abalone"}, sub:{zh:"鮑參翅肚之首 · 宴席首選",en:"King of Chinese delicacies · Banquet favourite"},
-    intro:{zh:"鮑魚位列「鮑參翅肚」之首，肉質厚實、鮮味濃郁，是高端中菜及宴席的招牌食材。不同頭數規格適合不同菜式及價位需要。",
-           en:"Abalone heads the classic list of Chinese seafood delicacies. Its thick, meaty flesh and deep savoury flavour make it a signature of fine Chinese dining and banquets, with different sizes for different dishes and budgets."},
+    intro:{zh:"鮑魚位列「鮑參翅肚」之首，肉質厚實、鮮味濃郁，是高端中菜及宴席的招牌食材。不同頭數規格適合不同菜式需要。",
+           en:"Abalone heads the classic list of Chinese seafood delicacies. Its thick, meaty flesh and deep savoury flavour make it a signature of fine Chinese dining and banquets, with different sizes for different dishes."},
     points:[ {k:{zh:"產地",en:"Origin"},v:{zh:"精選優質產地",en:"Selected premium origins"}},
              {k:{zh:"規格",en:"Grading"},v:{zh:"按頭數分級",en:"By count (size)"}},
              {k:{zh:"特點",en:"Character"},v:{zh:"肉質厚實、鮮味濃郁",en:"Thick, meaty, rich flavour"}},
@@ -91,7 +91,6 @@ var DELIVERY=[{zh:"香港本地送貨",en:"Hong Kong delivery"},{zh:"定期配�
         '<p class="intro">'+both(f.intro)+'</p>'+
         '<div class="f-points">'+f.points.map(function(p){return '<div><b>'+both(p.k)+'</b><span>'+both(p.v)+'</span></div>'}).join("")+'</div>'+
         '<ul class="f-uses">'+uses+'</ul>'+
-        f.items.map(function(it){return orderRow(it.pid,f.items.length>1)}).join("")+
         '</div></article>';
     }).join("");
     document.getElementById("soonGrid").innerHTML=SOON.map(function(s){
@@ -165,8 +164,8 @@ var DELIVERY=[{zh:"香港本地送貨",en:"Hong Kong delivery"},{zh:"定期配�
   });
 
   /* cart */
-  var cart=[];try{cart=JSON.parse(store.get("holden-cart2")||"[]")||[]}catch(e){cart=[]}
-  cart=cart.filter(function(i){return PRODUCTS[i.id]});
+  /* products can no longer be added from the page, so the enquiry form always starts as a general enquiry */
+  var cart=[];store.set("holden-cart2","[]");
   function save(){store.set("holden-cart2",JSON.stringify(cart))}
   function addItem(id,qty,u){
     var ex=cart.filter(function(i){return i.id===id&&i.u===u})[0];if(ex)ex.qty+=qty;else cart.push({id:id,qty:qty,u:u});
@@ -218,17 +217,6 @@ var DELIVERY=[{zh:"香港本地送貨",en:"Hong Kong delivery"},{zh:"定期配�
     L.push((zh?"客戶類別：":"Client type: ")+val("ctype"));L.push((zh?"配送方式：":"Delivery: ")+val("dmethod"));
     if(val("ddate"))L.push((zh?"期望日期：":"Preferred date: ")+val("ddate"));if(val("notes"))L.push((zh?"備註：":"Notes: ")+val("notes"));
     return L.join("\n")}
-  document.getElementById("sendWa").addEventListener("click",function(){if(!validate())return;window.open("https://wa.me/"+CONTACT.whatsapp+"?text="+encodeURIComponent(compose()),"_blank","noopener")});
-  /* direct WhatsApp links: open the chat with a ready-made enquiry template (includes enquiry-list items if any) */
-  function waTemplate(){var zh=LANG==="zh",L=[];
-    L.push(zh?"您好，我想查詢海天集團的產品。":"Hello, I would like to enquire about Holden Group's products.");L.push("");
-    if(cart.length){L.push(zh?"查詢產品：":"Products:");cart.forEach(function(i,k){var p=PRODUCTS[i.id];L.push((k+1)+". "+t(p)+" × "+i.qty+" "+t(p.units[i.u]))})}
-    else{L.push(zh?"查詢產品：":"Products:")}
-    L.push(zh?"姓名：":"Name:");L.push(zh?"公司／餐廳：":"Company / restaurant:");L.push(zh?"客戶類別（餐廳／酒店／個人／企業禮品）：":"Client type (restaurant / hotel / private / corporate gift):");
-    L.push(zh?"配送方式（送貨／自取）：":"Delivery or pickup:");L.push(zh?"期望日期：":"Preferred date:");L.push(zh?"備註：":"Notes:");
-    return L.join("\n")}
-  document.addEventListener("click",function(e){var a=e.target.closest('a[href^="https://wa.me/"]');if(!a)return;
-    a.href="https://wa.me/"+CONTACT.whatsapp+"?text="+encodeURIComponent(waTemplate())});
   document.getElementById("sendMail").addEventListener("click",function(){if(!validate())return;var subj=(LANG==="zh"?"產品查詢 – ":"Product enquiry – ")+val("name");location.href="mailto:"+CONTACT.email+"?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(compose())});
   ["name","phone"].forEach(function(id){document.getElementById(id).addEventListener("input",function(){document.getElementById("f-"+id).classList.remove("err");hideToast()})});
 
